@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .container
+    h1.unselectable
+      span #{name}
+      span.message  access
+
+    form
+      input#password-fake.hide(type="password")
+      input#password(type="password", placeholder="Password")
+
+    a.large#access-page-button(href="#", data-page-name=name) Access #{name}

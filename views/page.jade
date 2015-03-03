@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  #page(data-id=page.id)
+
+    input#new-note-input(type="text", placeholder="Paste text here.", data-placeholder="Paste text here.")
+
+    textarea.note#note-template.hide
+
+    #notes
+      each note, index in page.Notes
+        include note
