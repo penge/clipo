@@ -1,0 +1,94 @@
+body {
+  font-size: 15px;
+  margin: 0;
+}
+
+body, input, textarea {
+  font-family: 'Arial';
+}
+
+h1 {
+  font-size: 40px;
+  margin: 30px 0;
+  line-height: 60px;
+}
+
+
+/* Links */
+
+a { text-decoration: none; }
+a.large { font-size: 20px; margin-left: 20px; color: #FF7373; }
+a.large:hover { border-bottom: 2px solid #FF7373; }
+
+
+/* Various */
+
+:focus { outline: none !important; }
+::selection { color: #222; background: #dedede; }
+.container { margin: 0 5%; }
+.message { color: silver; }
+.hide { display: none !important; }
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+}
+
+
+/* Inputs */
+
+input {
+  font-size: 20px;
+  padding: 20px;
+  width: 260px;
+}
+
+#password {
+  display: block;
+  margin: 0 0 40px 0;
+}
+
+#new-note-input {
+  font-size: 40px;
+  margin: 0;
+  height: 120px;
+  line-height: 120px;
+  background: #34A9D3;
+  border: none;
+  position: fixed;
+  width: 100%;
+  padding: 0 5%;
+}
+
+#new-note-input,
+#new-note-input::-webkit-input-placeholder {
+  color: rgba(255,255,255,.7);
+}
+
+
+/* Notes */
+
+#notes {
+  padding-top: 140px;
+}
+
+.note {
+  -moz-transition: height 0.2s;
+  -webkit-transition: height 0.2s;
+  transition: height 0.2s;
+  font-size: 15px;
+  line-height: 150%;
+  color: #333;
+  margin: 10px 2%;
+  padding: 20px 5%;
+  width: 96%;
+  resize: none;
+  border: none;
+  background: white;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.note:last-child {
+  border: none;
+}
