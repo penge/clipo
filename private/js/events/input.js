@@ -69,11 +69,11 @@ module.exports = function() {
     return $.inArray(text, values) != -1;
   };
 
-	var getAllNoteValues = function() {
-	  return $('.note').map(function() {
-	    return $(this).val();
-	  });
-	};
+  var getAllNoteValues = function() {
+    return $('.note').map(function() {
+      return $(this).val();
+    });
+  };
 
   return {
     init: init,
